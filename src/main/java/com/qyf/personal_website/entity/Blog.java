@@ -1,6 +1,5 @@
 package com.qyf.personal_website.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Getter;
@@ -11,18 +10,19 @@ import java.util.Date;
 
 /**
  * author:qyf
- * Date:2019/8/5
+ * Date:2019/8/6
  * description:
  */
 @Getter
 @Setter
 @ToString
-@TableName("t_user")
-public class User {
+@TableName("t_blog")
+public class Blog {
     @TableId
     private int id;
-    private String userName;
-    private String passWord;
+    private String title;
+    private String tag;
+    private String content;
     private Date createTime;
     private Date updateTime;
 }
